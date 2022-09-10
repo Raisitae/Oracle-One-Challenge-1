@@ -9,8 +9,6 @@ let mensajeEncriptado = [];
 
 botonEncriptar.addEventListener("click", encriptar);
 
-botonDesencriptar.addEventListener("click", obtenerTexto);
-
 function encriptar() {
   mensaje = textareaInput.value;
   console.log(mensaje);
@@ -39,10 +37,10 @@ function encriptarLetra(e) {
       e = "ai";
       break;
     case "o":
-      o = "ober";
+      e = "ober";
       break;
     case "u":
-      u = "ufat";
+      e = "ufat";
       break;
   }
   mensajeEncriptado.push(e);
